@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create User</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="img/favicon.png">
+		
+		<!-- Google Fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="../css/bootstrap.min.css">
+		<!-- Nice Select CSS -->
+		<link rel="stylesheet" href="../css/nice-select.css">
+		<!-- Font Awesome CSS -->
+        <link rel="stylesheet" href="../css/font-awesome.min.css">
+		<!-- icofont CSS -->
+        <link rel="stylesheet" href="../css/icofont.css">
+		<!-- Slicknav -->
+		<link rel="stylesheet" href="../css/slicknav.min.css">
+		<!-- Owl Carousel CSS -->
+        <link rel="stylesheet" href="../css/owl-carousel.css">
+		<!-- Datepicker CSS -->
+		<link rel="stylesheet" href="../css/datepicker.css">
+		<!-- Animate CSS -->
+        <link rel="stylesheet" href="../css/animate.min.css">
+		<!-- Magnific Popup CSS -->
+        <link rel="stylesheet" href="../css/magnific-popup.css">
+		
+		<!-- Medipro CSS -->
+        <link rel="stylesheet" href="../css/normalize.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body>
+    <header>
+        <h1>Admin Panel</h1>
+    </header>
+    <div class="container">
+        <h2>Creer Utilisateur</h2>
+        <form id="createForm" action="create_user.php" method="post">
+            <input type="text" name="nom" placeholder="Nom" required>
+            <input type="text" name="prenom" placeholder="Prénom" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="password" name="mot_de_passe" placeholder="Mot de passe" required>
+            <select name="roles">
+                <option value="utilisateur">Utilisateur</option>
+                <option value="admin">Admin</option>
+                <option value="ministere">Ministère</option>
+                <option value="laborantin">Laborantin</option>
+            </select>
+            <button type="submit" class="btn">Creer Utilisateur</button>
+        </form>
+    </div>
+    <footer>
+        <p>Admin Panel &copy; 2024</p>
+    </footer>
+</body>
+</html>
